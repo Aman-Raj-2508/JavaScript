@@ -71,6 +71,5 @@ console.log(Symbol('Aman') === Symbol('Aman'));
  */
 
 // BUT
-
 let y = Symbol('Aman');
 console.log(y === y);

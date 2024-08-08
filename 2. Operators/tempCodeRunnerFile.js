@@ -1,4 +1,3 @@
-let i = "22"; //string
-let j = -i;
-console.log(typeof j);
-console.log(j);
+let g = "22"; //string
+let h = +g;
+console.log(typeof h);
