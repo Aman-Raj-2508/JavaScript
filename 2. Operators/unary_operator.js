@@ -40,3 +40,12 @@ let i = "22"; //string
 let j = -i;
 console.log(typeof j);
 console.log(j);
+
+//Assignment
+let ans = 0;
+let s = 0;
+for (let i = 0; i < "23"; i++) {
+    a = ans++;
+}
+console.log(ans);
+console.log(s);
