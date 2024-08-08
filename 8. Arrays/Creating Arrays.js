@@ -10,3 +10,5 @@ const arr = ["abc", "def", "ghi"];
 console.log(x, "\n", y, "\n", z);
 console.log(y[0]);
 console.log(y[4][0]);
+
+//It prints in different line due to terminal but on browser it is in same line only
