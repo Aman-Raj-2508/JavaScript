@@ -1,0 +1,16 @@
+var teacher = "sanket";
+function fun() {
+    var teacher = "pulkit"
+    console.log(teacher);
+}
+fun();
+
+// 
+var teacher = "sanket";
+function fun() {
+    var teacher = "pulkit"
+    console.log(teacher);
+}
+
+console.log(teacher);
+fun();
