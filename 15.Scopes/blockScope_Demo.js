@@ -3,7 +3,7 @@ if (true) {
     console.log(x);
 }
 
-// console.log(x);
+console.log(x);
 
 //Or
 
@@ -14,4 +14,4 @@ if (true) {
     let x = 10;
     console.log(x);
 }
-console.log(x);
+console.log(x); 
