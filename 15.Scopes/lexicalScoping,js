@@ -5,17 +5,18 @@ function fun() {
 }
 fun();
 
-// 
+// Difference between function scope and global
 var teacher = "sanket";
 function fun() {
     var teacher = "pulkit"
-    console.log(teacher);
+    console.log(teacher);//calls scope of fun teacher variable
 }
-
-console.log(teacher);
+console.log(teacher);//calls Global scope  teacher variable
 fun();
 
-/** Example */
+
+
+/** Example given to clarify more   */
 function fun(val) {
     var student;
 }
@@ -28,4 +29,4 @@ function gun() {
     var student = 100;
 }
 gun();
-run();
+run(); 
