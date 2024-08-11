@@ -38,13 +38,13 @@ console.log(null === null);
  */
 
 console.log("Aman" === "Aman");
-/**Do character by character comaprison
+/**Does character by character comaprison
  * so true
  */
 
 console.log("Aman" === "Adit");
-/**Do character by character comaprison
- * so true
+/**Does character by character comaprison
+ * so false
  */
 
 // console.log({ "a": 10 } === { "a": 10 });
@@ -66,8 +66,7 @@ console.log(x === x);
 
 console.log(Symbol('Aman') === Symbol('Aman'));
 /**
- * Same reason that was for console,they are in different
- * memory
+ * Same reason that was for objects,they are in different memory
  */
 
 // BUT
