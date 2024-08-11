@@ -13,7 +13,7 @@ console.log(!-4);
 console.log(!{});
 /**
  * {}-->truthy
- * ToBoolean(!{})--> returns true, so oldvalue variable is now true
+ * ToBoolean({})--> returns true, so oldvalue variable is now true
  * !{}-->So, returned false
  */
 console.log(!console.log(0));

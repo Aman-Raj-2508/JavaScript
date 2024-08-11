@@ -12,13 +12,14 @@ console.log("132" - 10)
 
 console.log("12fd" - 20)
 //"12fd is string,so abstract operation to number is called and to number("12fd")--> NaN because this string cannot be parsed to number
+
 // console.log(Symbol("123") - 30)type error
 
 console.log(true - 8);
 //true converted to 1
 
 console.log(NaN - NaN);
-//Invalid number - invalid number is invalid number and since it is a nubmer so conversion needed
+//Invalid number - invalid number is invalid number and since it is a nubmer so no conversion needed
 
 console.log([null] - 9);
 //array of null coverted to 0
@@ -39,15 +40,15 @@ console.log("011" - 1);
 //takes "011" as decimal number
 
 console.log("0o11" - 1);
-//"0o11" is a string,and can become avalid octal number, toNumber("0o11")-->9, and (9-1) =8 
+//"0o11" is a string,and can become a valid octal number, toNumber("0o11")-->9, and (9-1) =8
 
 // New key value overrides the old one
-console.log(10 - {
-    "a": 10, valueOf() { return 8; },
-    "b": 10, valueOf() { return 4; },
-    "c": 10, valueOf() { return 3; }
-});
+// console.log(10 - {
+//     "a": 10, valueOf() { return 8; },
+//     "b": 10, valueOf() { return 4; },
+//     "c": 10, valueOf() { return 3; }
+// });
 
-console.log(10 - {
-    "a": 10, valueOf() { return {}; }, toString() { return "5"; }
-});
+// console.log(10 - {
+//     "a": 10, valueOf() { return {}; }, toString() { return "5"; }
+// });
