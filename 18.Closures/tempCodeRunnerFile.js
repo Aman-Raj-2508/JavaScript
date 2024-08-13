@@ -1,13 +1,10 @@
-function todo() {
-    var task = "assignments";
-    console.log("start of todo");
-    setTimeout(function fun() {
-        console.log("completed", task);
-    }, 2000);
-    task = "dayananda";
-    console.log("end of todo");
+function test() {
+    for (var i = 0; i < 3; i++) {
+        var j = i
+        setTimeout(function exec() {
+            console.log(`i:${i}`);
+        }, i * 1000);
+    }
 }
 
-console.log("starting");
-todo();
-console.log("ending");
+test(); 
