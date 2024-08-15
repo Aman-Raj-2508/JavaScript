@@ -12,7 +12,7 @@ fun("name:sanket,subject:cse", function process(input) {
 })
 
 
-/**But my mistake once call fn function twice then things are very bad */
+/**But my mistake one calls fn function twice then things are very bad */
 //This is known as inversion of control
 
 function fun(inputString, fn) {
