@@ -10,7 +10,7 @@ setTimeout(function execute() {
 }, 3000);
 console.log("end");
 
-/** Example to shoe the usecase of id returned by seetTimeout function */
+/** Example to show the use case of id returned by seetTimeout function */
 let id1 = setTimeout(function execute1() {
     console.log("task completed 1");
 }, 10000);

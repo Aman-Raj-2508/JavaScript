@@ -1,4 +1,4 @@
-function mappper(arr, fn) {
+function mappper(arr, cuber) {
     /**
      * arr --> is going to be an array of elements
      * fn --> is callback function which expects two arguments value and index
@@ -7,7 +7,7 @@ function mappper(arr, fn) {
     for (let i = 0; i < arr.length; i++) {
         //i-->index
         //arr[i]--value
-        let res = fn(arr[i], i);
+        let res = cuber(arr[i], i);
         result.push(res);
     }
     return result;

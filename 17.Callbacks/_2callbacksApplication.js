@@ -7,8 +7,8 @@ arr.map(function procress(v, i) {
     console.log(v, i);
 });
 
-let arr1 = [1, 2, 3, 4, 5];
-let x = arr.map(function procress(v, i) {
+let arr1 = [1, 2, 3, 4, 5, 6];
+let x = arr1.map(function procress(v, i) {
     /**
      * v-->value
      * i-->index
@@ -19,7 +19,7 @@ console.log(x); //prints undefiend because map funciton is not returning anythin
 
 
 let arr2 = [1, 2, 3, 4, 5];
-let y = arr.map(function procress(v, i) {
+let y = arr2.map(function procress(v, i) {
     /** 
      * v-->value
      * i-->index

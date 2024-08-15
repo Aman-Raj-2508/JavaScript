@@ -30,8 +30,10 @@ gun();
 
 fun(15, gun);//whereas if we just paas as a name gun it is call first fun then the logic inside this
 
-fun(15, gun());//when we put a pair of parenthesis it means we are immediately callling the function and it will throw error as it will return undefined as gun will return undefined as gun is
-// not returning anything so console.log returns undefined and in fun (10,undefined) will be passed and  when fn() --> as undefined() called gives error
+fun(15, gun());//when we put a pair of parenthesis it means we are immediately callling the function and 
+//it will throw error as it will return undefined as gun will return undefined as gun is
+// not returning anything so console.log returns undefined and in fun (10,undefined) 
+//will be passed and  when fn() --> as undefined() called gives error
 
 //We can pass function expression as well
 let g = function () {
