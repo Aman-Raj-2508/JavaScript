@@ -5,10 +5,11 @@ function gun(fn) {
     console.log("Inside gun");
     fn();
     console.log("Leaving gun");
+    console.trace();
 }
 
-gun(function () {
-    console.log("new function passed");
-});
+// gun(function logger () {
+//     console.log("new function passed");
+// });
 
 gun(fun);
