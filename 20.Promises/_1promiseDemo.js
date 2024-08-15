@@ -1,4 +1,4 @@
-//how can we write a function to download some data from a url,and not use callbacks
+//How can we write a function to download some data from a url,and not use callbacks
 //instead use promises
 function fetch(url) {
     return new Promise(function (resolve, reject) {

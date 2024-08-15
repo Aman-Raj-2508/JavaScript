@@ -26,6 +26,7 @@ function fun() {
 }
 
 fun();
+
 // let z = 99; //it is global scope but not accessible everywhere
 var z = 99;
 console.log(z); // let keyword allows this print since it is after initialisation

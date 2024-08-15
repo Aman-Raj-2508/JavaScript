@@ -1,12 +1,12 @@
-
 var teacher = "sanket";
 function fun() {
-    var teacher = "pulkit"
+    console.log(subject);
+    var teacher = "pulkit";
+    var subject = "JavaScript";
     teachingAssistant = "Vaibhav";
     console.log(teacher);
     console.log(teachingAssistant);
 }
-
-console.log(teachingAssistant);
 fun();
 console.log(teacher);
+console.log(teachingAssistant);
