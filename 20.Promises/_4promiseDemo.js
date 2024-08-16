@@ -72,3 +72,17 @@ downloadPromise
         console.log("Downloading is done with the following value", value);
         return value;
     })
+    .then(function processWrite(value) {//data from fetch data
+        console.log("inside process writeFile")
+        return writeFile(value);
+    })
+    .then(function processUpload(value) {
+        console.log("inside process writeFile")
+        return uploadData(value, "www.drive.com");
+    })
+
+console.log("Ended")/** it will be printed before the execution of .then fucntions
+    because .then function registers functions in fullfillment arrays and move forward
+    doesnot wait so at line it will not wait .
+    similarly for line 75 and 79 AND
+    it will print ending */
