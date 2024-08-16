@@ -11,3 +11,5 @@ function fetch(url) {
         }, 4000);
     })
 }
+
+fetch("www.google.com");

@@ -80,9 +80,9 @@ downloadPromise
         console.log("inside process writeFile")
         return uploadData(value, "www.drive.com");
     })
-
-console.log("Ended")/** it will be printed before the execution of .then fucntions
-    because .then function registers functions in fullfillment arrays and move forward
-    doesnot wait so at line it will not wait .
-    similarly for line 75 and 79 AND
-    it will print ending */
+console.log("Ended")
+/** it will be printed before the execution of .then fucntions
+because .then function registers functions in fullfillment arrays and move forward
+doesnot wait so at line it will not wait .
+similarly for line 75 and 79 AND
+it will print ending */

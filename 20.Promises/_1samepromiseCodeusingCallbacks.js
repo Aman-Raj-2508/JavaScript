@@ -8,7 +8,7 @@ function fetchCustom(url, fn) {//we are just mimicing the function not actually 
     setTimeout(function process() {
         console.log("Download completed");
         let response = "Dummy data";
-        fn(response);//What will be the scope of fn here
+        fn(response);//Scope of fetchCustom so settimeout functions remembers the lexical scope
     }, 3000);
 }
 
@@ -33,10 +33,10 @@ function uploadFile(filename, newurl, fn) {
 }
 
 let reponse = fetchCustom("www.google.com", function downloadCallback(response) {
-    console.log("Downloaded response is ", response);
-    writeFile(response, function writeCallback(filenameResponse) {
-        console.log("new file written is", filenameResponse);
-        uploadFile(filenameResponse, "www.drive.google.com", function uploadCallback(uploadresponse) {
+    console.log("Downloaded Data is ", response);
+    writeFile(response, function writeCallback(filename) {
+        console.log("New file written is", filename);
+        uploadFile(filename, "www.drive.google.com", function uploadCallback(uploadresponse) {
             console.log("successfully uploaded", uploadresponse);
         })
     })
