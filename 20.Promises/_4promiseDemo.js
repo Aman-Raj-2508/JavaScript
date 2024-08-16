@@ -2,17 +2,33 @@
 function fetchData(url) {
     return new Promise(function (resolve, reject) {
         console.log("Started downloading from", url);
+
+        /** Promise object will get ceated easily as there is no blocking
+         * piece of code and initially it will be pending.
+         * As fullfillement happens after a timer of 7 secs.
+         */
         setTimeout(function processDownloading() {
             let data = "Dummy data";
-            console.log("Download COmpleted");
+            console.log("Download Completed");
             resolve(data);
             resolve("Aman");/**These lines will not be executed*/
-            resolve("123");/**As promise is fullfilled only once*/
+            resolve("123");/**As promise is fullfilled only once and we resolve only one*/
+            /**This executes as resolve is like returning not exactly returning
+            So if there is any line of code it will be executed but resolving works only once */
+            console.log("hello");
         }, 5000);
+
+        /**this callback is having a long synchronous
+        piece of code,So JS will have to wait for promise object creation
+        and just after for loop , we also resolve the promise so we get a resolved promsie.*/
+        // for (let i = 0; i < 100000; i++) {
+        //     resolve("Dummy data");
+
+        // };
     });
 }
 
-//2. Write a funciton to save that downloaded data ina  file and return the filename
+//2. Write a function to save that downloaded data ina  file and return the filename
 
 function writeFile(data) {
     return new Promise(function (resolve, reject) {
@@ -63,7 +79,6 @@ function uploadData(file, url) {
 //                     })
 //             })
 //     })
-
 //The above code solves inversion of control but still gets promise hell
 
 let downloadPromise = fetchData("www.datadrive.com");
@@ -71,16 +86,17 @@ downloadPromise
     .then(function processDownload(value) {
         console.log("Downloading is done with the following value", value);
         return value;
-    })
+    }) //once this function is completely excuted then it returns a fullfilled value
     .then(function processWrite(value) {//data from fetch data
         console.log("inside process writeFile")
         return writeFile(value);
-    })
+    })//once this function is completely excuted then it returns a fullfilled value
     .then(function processUpload(value) {
         console.log("inside process writeFile")
         return uploadData(value, "www.drive.com");
     })
-console.log("Ended")
+
+// console.log("Ended")
 /** it will be printed before the execution of .then fucntions
 because .then function registers functions in fullfillment arrays and move forward
 doesnot wait so at line it will not wait .

@@ -6,10 +6,10 @@ function fetch(url) {
         setTimeout(function process() {
             let data = "Dummy data";
             console.log("Completed fetching the data");
-            //somehow we need to return the data ? fo that
+            //somehow we need to return the data ? for that
             resolve(data);//return some data on success  
         }, 4000);
-    })
+    });
 }
 
 fetch("www.google.com");
