@@ -81,6 +81,8 @@ function uploadData(file, url) {
 //     })
 //The above code solves inversion of control but still gets promise hell
 
+console.log("Start");
+
 let downloadPromise = fetchData("www.datadrive.com");
 downloadPromise
     .then(function processDownload(value) {

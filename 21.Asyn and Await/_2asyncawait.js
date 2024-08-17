@@ -55,6 +55,15 @@ async function processing() {
     return true;
 }
 
-processing();
-
-//run on browser also
+/**Why start printed first and started downloading from...
+ * then end and after that
+ * everything else is printed???Why?why?
+ * same bhevaiour will be seen if you put .then also
+ */
+console.log("Start"); //prints
+processing();//calls processing and executes fetch data and prints started downloading from....but 
+// fetch data will give the resolved promise after 5s so js will hold all the codes in this function
+//as it will only execute when resolved promise is returned
+//and js will not wait and moves forward and prints end
+//after that it will execute the remaing codes from microtask queue
+console.log("End");
