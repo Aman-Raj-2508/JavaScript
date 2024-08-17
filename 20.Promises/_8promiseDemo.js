@@ -1,8 +1,8 @@
 function dummyPromise() {
-    return new Promise(function (resolve, reject) { //function f
-        setTimeout(function () {//function a
+    return new Promise(function (resolve, reject) {
+        setTimeout(function () {
             resolve("Timer's Promise")
-        }, 10000);
+        }, 0);
     });
 }
 

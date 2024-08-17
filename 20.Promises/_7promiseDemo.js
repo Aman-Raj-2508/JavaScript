@@ -1,11 +1,3 @@
-// function dummyPromise() {
-//     return new Promise(function (resolve, reject) {
-//         setTimeout(function () {
-//             resolve("Timer's Promise")
-//         }, 10000);
-//     });
-// }
-
 console.log("Start of the file");
 
 setTimeout(function timer1() {
