@@ -6,7 +6,7 @@ function fetchData(url, fn) {
         let response = "Dummy data";
         // fn(undefined, response);//no error
         // fn(new Error("something"), response)// using new Error for errors
-        fn({ error: "Some error" }, response)//passing objects as error
+        fn({ error: "Some error" }, + response)//passing objects as error
     }, 3000);
 }
 
