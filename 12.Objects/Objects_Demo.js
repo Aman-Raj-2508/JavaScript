@@ -23,3 +23,9 @@ console.log(x);
 //use delete operator along with  object.key
 delete x.name;
 console.log(x);
+
+let z = {
+    name: ["Aman", "Aditya", "Himanshu"],
+    age: 5
+};
+console.log(z.name);
