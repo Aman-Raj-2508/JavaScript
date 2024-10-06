@@ -32,7 +32,7 @@ function uploadFile(filename, newurl, fn) {
     }, 2000);
 }
 
-let reponse = fetchCustom("www.google.com", function downloadCallback(response) {
+let reponse2 = fetchCustom("www.google.com", function downloadCallback(response) {
     console.log("Downloaded Data is ", response);
     writeFile(response, function writeCallback(filename) {
         console.log("New file written is", filename);
